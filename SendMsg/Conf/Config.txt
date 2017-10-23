@@ -1,0 +1,74 @@
+#【发送常规消息总数】
+SEND_MSG_COUNT=1
+
+#【发送@消息】
+#[是否发送@消息]
+IS_SEND_AT_MSG=0
+#[是否在发送的@消息中穿插普通消息]
+IS_SEND_COMMON_IN_AT=1
+#[发送@消息数]
+SEND_AT_MSG_COUNT=30
+#[每发一条@中间插发n条普通消息]
+SEND_AT_COMMON_MSG_COUNT=2
+#[拼装@用户的信息]一般线上用户手机号作为为nickname的话，nickname一般设置类似为187****5555,AT_PHONE和AT_NICNAME最好要和AT_UID对应上，否则影响测试效果
+AT_NICNAME=187****0020
+AT_PHONE=18700000020
+
+#【发送消息的通用数据】
+#[发送者UID]
+FROM_UID=2003680576
+#[发送给谁 （置为0就行，一般都用不着，不知道为何要传这个参数）]
+TO_UID=0
+#[发送消息的群]
+TO_GROUPID=170
+#[发送@消息的UID]
+AT_UID=2003731796
+#[业务线]
+PRODUCT_ID=-1
+#[发送者的cuid]
+USER_CUID=263D3A4ABA4D19548062A2B39E3243EE|47487095800099
+
+#【发送消息频率】
+#[是否定频发送，定频发送0， 随机发送1]
+MSG_FREQUENCY=0
+MSG_AT_FREQUENCY=0
+#[发送消息的时间间隔,单位s]
+MSG_INTERVAL=0
+#[@消息的发送时间间隔]
+MSG_AT_INTERVAL=0
+#[@消息中穿插的普通消息的发送时间间隔]
+MSG_AT_COMMON_INTERVAL=0
+
+#【消息发送策略】
+#[消息发送策略 单消息类型 => 0 ，随机消息类型 => 1]
+MSG_SEND_STRATEGY=0
+#[单一消息类型选择 文本：1，图片：2，语音：3，GIF：4]
+MSG_SEND_CHOOSE=1
+
+#【消息类型发送开关 开1, 关0】
+#[文本]
+TXT_SWITCH=1
+#[图片]
+PIC_SWITCH=1
+#[语音]
+VOI_SWITCH=1
+#[老师表情]
+GIF_SWITCH=0
+
+#【个性化配置 默认是0关闭】
+PERSONALIZATION_SWITCH=0
+#[文本消息类型个性化 1、超长文本 2、报数文本 3、黄反脏话集 4、特殊字符集]
+TXT_CONTENT_PERSONALIZATION=0
+#[图片消息类型个性化 1、超长图 2、超宽图 3、非图片格式]
+PIC_CONTENT_PERSONALIZATION=0
+#[语音消息类型个性化 待补充]
+VOI_CONTENT_PERSONALIZATION=0
+
+#【相关文件路径】
+#[配置文件目录]
+CONF_PATH=/home/homework/user/huangdazhen/script/im/IMTest/SendMsg/Conf/
+#[日志文件运行目录]
+LOG_PATH=/home/homework/user/huangdazhen/script/im/IMTest/TestLog/log/Msg_log/
+#[主程序运行目录]
+CTRL_PATH=/home/homework/user/huangdazhen/script/im/IMTest/SendMsg/Controller/
+
